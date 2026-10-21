@@ -1,0 +1,49 @@
+{
+  "project": {
+    "name": "Mineracao de repositorios multiagentes",
+    "description": "Identificar repositorios publicos de sistemas multiagentes com suites de teste ativas."
+  },
+  "queries": [
+    "\"multi-agent\" test",
+    "\"multi-agent\" testing",
+    "\"multi-agent\" evaluation",
+    "\"multi-agent\" benchmark",
+    "autogen test",
+    "autogen testing",
+    "autogen evaluation",
+    "autogen benchmark",
+    "crewai test",
+    "crewai testing",
+    "crewai evaluation",
+    "crewai benchmark",
+    "langgraph test",
+    "langgraph testing",
+    "langgraph evaluation",
+    "langgraph benchmark",
+    "metagpt test",
+    "metagpt testing",
+    "metagpt evaluation",
+    "metagpt benchmark"
+  ],
+  "filters": {
+    "max_per_query": 100,
+    "min_stars": 0,
+    "active_since": "2024-01-01",
+    "languages": [],
+    "require_tests": true,
+    "include_forks": false,
+    "include_archived": false
+  },
+  "collection": {
+    "download_source": false,
+    "source_dir": "sources",
+    "pause_seconds": 1.0
+  },
+  "output": {
+    "database": "data/miner.db",
+    "directory": "output",
+    "csv": true,
+    "excel": true,
+    "readme_csv": true
+  }
+}
